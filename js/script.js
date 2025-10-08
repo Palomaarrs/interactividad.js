@@ -6,3 +6,10 @@ let esMayorDeEdad= edad >= 18;
 nombre= 'Paloma Arreola';
 edad= 24;
 console.log('Hola ' + nombre);
+
+function saludar(_nombre= "Mundo") {
+    alert("Hola" + _nombre);
+}
+saludar();
+saludar(nombre);
+saludar("Juan");
