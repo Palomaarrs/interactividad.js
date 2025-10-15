@@ -1,14 +1,51 @@
 :root {
-    --dark:#212121;
-    --light:#f5f5f5;
+    --dark: #212121;
+    --light: #f5f5f5;
 }
 
 body.dark {
     background-color: var(--dark);
-    color: var(--light);    
+    color: var(--light);
 }
+
+section#attract {
+    position: fixed;
+    background: rgb(105, 130, 172);
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
 body {
     background-color: var(--light);
     color: var(--dark);
 }
 
+button {
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--light);
+    border: none;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    font-size: 34px;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    
+}
+
+button:hover {
+    background: rgb(255, 225, 0);
+    color: rgb(51, 0, 99);
+    border-radius: 0;
+}
